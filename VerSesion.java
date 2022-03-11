@@ -31,7 +31,8 @@ IOException {
 HttpSession misesion= (HttpSession) request.getSession();
 Examen  miAlumno = (Examen ) misesion.getAttribute("examen");
 PrintWriter pw= response.getWriter();
-pw.println("<html><body>"+ miAlumno) ;
+pw.println("<html><body>"+"Direccion URL: "+request.getRequestURI();)
+           +miAlumno) ;
 pw.close(); }
 /**
 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
